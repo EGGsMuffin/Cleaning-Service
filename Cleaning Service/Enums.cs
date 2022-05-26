@@ -8,7 +8,7 @@ namespace Cleaning_Service
 {
     internal class Enums
     {
-        public enum ResidentialType
+        public enum DomesticType
         {
             DETACHED,
             SEMI_DETACHED,
