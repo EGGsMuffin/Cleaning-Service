@@ -7,7 +7,7 @@ using static Cleaning_Service.Enums;
 
 namespace Cleaning_Service
 {
-    internal class Domestic
+    internal class Domestic : IFProperty
     {
         public Guid Id { get; set; }
         public string Address { get; set; }
