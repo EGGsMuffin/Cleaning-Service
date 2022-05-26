@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static Cleaning_Service.Enums;
 
 namespace Cleaning_Service
 {
@@ -10,22 +11,16 @@ namespace Cleaning_Service
     {
         public Guid Id { get; set; }
         public string Description { get; set; }
-        public DateTime Date { get; set; }
-        public bool Open { get; set; }
-        public List<Purchase> PurchaseList { get; set; }
 
         public MinorCleaning(string description)
         {
             Id = Guid.NewGuid();
             Description = description;
-            Date = DateTime.Now;
-            Open = true;
-            PurchaseList = new List<Purchase>();
         }
 
         public override string? ToString()
         {
-            return $"Description: {Description} Created On: {Date}";
+            return $"Description: {Description}";
         }
     }
 }

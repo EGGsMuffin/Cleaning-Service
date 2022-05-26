@@ -22,7 +22,7 @@ namespace UnitTests
 
             //Assert
             Assert.IsType<MajorCleaning>(majorCleaning);
-            Assert.Equal(majorCleaningString, $"Description: Fire Damage Priority: MEDIUM Created On: {DateTime.Now}");
+            Assert.Equal(majorCleaningString, $"Description: Fire Damage Priority: MEDIUM");
 
         }
 
@@ -38,7 +38,7 @@ namespace UnitTests
 
             //Assert
             Assert.IsType<MinorCleaning>(minorCleaning);
-            Assert.Equal(minorCleaningString, $"Description: Mopping Created On: {DateTime.Now}");
+            Assert.Equal(minorCleaningString, $"Description: Mopping");
 
         }
     }

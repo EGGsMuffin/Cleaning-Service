@@ -21,7 +21,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Cleaning Service\Cleaning Service.csproj" />
+    <ProjectReference Include="..\Cleaning Service\Cleaning Service.csproj">
+      <CopyLocal>True</CopyLocal>
+    </ProjectReference>
   </ItemGroup>
 
 </Project>
