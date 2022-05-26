@@ -13,11 +13,11 @@ namespace Cleaning_Service
         public DateTime Date { get; set; }
         public bool Open { get; set; }
 
-        public MinorCleaning(Guid id, string description, DateTime date, bool open)
+        public MinorCleaning(string description, DateTime date, bool open)
         {
             Id = Guid.NewGuid();
             Description = description;
-            Date = date;
+            Date = DateTime.Now;
             Open = open;
         }
     }

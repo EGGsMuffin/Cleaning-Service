@@ -14,7 +14,7 @@ namespace Cleaning_Service
         public DomesticType Type { get; set; }
         public int NumberOfBedrooms { get; set; }
 
-        public Domestic(Guid id, string address, DomesticType type, int numberOfBedrooms)
+        public Domestic(string address, DomesticType type, int numberOfBedrooms)
         {
             Id = Guid.NewGuid();
             Address = address;
