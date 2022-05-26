@@ -12,13 +12,15 @@ namespace Cleaning_Service
         public string Description { get; set; }
         public DateTime Date { get; set; }
         public bool Open { get; set; }
+        public List<Purchase> PurchaseList { get; set; }
 
-        public MinorCleaning(string description, DateTime date, bool open)
+        public MinorCleaning(string description)
         {
             Id = Guid.NewGuid();
             Description = description;
             Date = DateTime.Now;
-            Open = open;
+            Open = true;
+            PurchaseList = new List<Purchase>();
         }
     }
 }

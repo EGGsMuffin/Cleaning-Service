@@ -14,14 +14,17 @@ namespace Cleaning_Service
         public string BusinessName { get; set; }
         public CommericalType Type { get; set; }
         public double SizeInSqFoot { get; set; }
+        public Customer CurrentCustomer { get; set; }
+        public List<IFCleaning> Cleaning { get; set; }
 
-        public Commercial(string address, string businessName, CommericalType type, double sizeInSqFoot)
+        public Commercial(string address, string businessName, CommericalType type, double sizeInSqFoot, Customer customer)
         {
             Id = Guid.NewGuid();
             Address = address;
             BusinessName = businessName;
             Type = type;
             SizeInSqFoot = sizeInSqFoot;
+            CurrentCustomer = customer;
         }
     }
 }

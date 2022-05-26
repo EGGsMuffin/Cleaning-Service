@@ -12,5 +12,6 @@ namespace Cleaning_Service
         public string Description { get; set; }
         public DateTime Date { get; set; }
         public bool Open { get; set; }
+        public List<Purchase> PurchaseList { get; set; }
     }
 }

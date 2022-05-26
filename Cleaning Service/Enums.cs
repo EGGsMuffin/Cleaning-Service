@@ -26,7 +26,7 @@ namespace Cleaning_Service
             RETAIL
         }
 
-        public enum IssueSeverity
+        public enum CleaningSeverity
         {
             HIGH,
             MEDIUM,
