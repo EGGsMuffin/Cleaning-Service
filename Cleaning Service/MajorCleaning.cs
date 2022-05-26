@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static Cleaning_Service.Enums
+using static Cleaning_Service.Enums;
 
 namespace Cleaning_Service
 {
-    internal class MajorCleaning : IFCleaning
+    public class MajorCleaning : IFCleaning
     {
         public Guid Id { get; set; }
         public string Description { get; set; }

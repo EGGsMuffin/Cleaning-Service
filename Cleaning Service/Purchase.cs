@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Cleaning_Service
 {
-    internal class Purchase
+    public class Purchase
     {
         public Guid Id { get; set; }
         public string? Description { get; set; }

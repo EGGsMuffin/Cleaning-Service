@@ -7,7 +7,7 @@ using static Cleaning_Service.Enums;
 
 namespace Cleaning_Service
 {
-    internal class StaffMember : IFPerson, IFStaff
+    public class StaffMember : IFPerson, IFStaff
     {
         public Guid Id { get; set; }
         public string Fname { get; set; }
@@ -18,7 +18,7 @@ namespace Cleaning_Service
         public string Password { get; set; }
         public StaffType Type { get; set; }
 
-        public StaffMember(string fname, string sname, string email, string phoneNumber, string username, string password, StaffType type)
+        public StaffMember(string fname, string sname, string email, string phoneNumber, string username, string password)
         {
             Id = Guid.NewGuid();
             Fname = fname;

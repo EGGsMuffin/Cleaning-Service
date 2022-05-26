@@ -7,7 +7,7 @@ using static Cleaning_Service.Enums;
 
 namespace Cleaning_Service
 {
-    internal class Commercial : IFProperty
+    public class Commercial : IFProperty
     {
         public Guid Id { get; set; }
         public string Address { get; set; }
@@ -25,6 +25,7 @@ namespace Cleaning_Service
             Type = type;
             SizeInSqFoot = sizeInSqFoot;
             CurrentCustomer = customer;
+            Cleaning = new List<IFCleaning>();
         }
 
         public override string? ToString()

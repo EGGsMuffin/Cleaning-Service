@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Cleaning_Service
 {
-    internal class Enums
+    public class Enums
     {
         public enum DomesticType
         {

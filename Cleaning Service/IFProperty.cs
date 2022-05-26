@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Cleaning_Service
 {
-    internal interface IFProperty
+    public interface IFProperty
     {
         public Guid Id { get; set; }
         public string Address { get; set; }

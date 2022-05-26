@@ -7,7 +7,7 @@ using static Cleaning_Service.Enums;
 
 namespace Cleaning_Service
 {
-    internal interface IFStaff
+    public interface IFStaff
     {
         public string Username { get; set; }
         public string Password { get; set; }

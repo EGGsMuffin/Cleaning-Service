@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Cleaning_Service
 {
-    internal interface IFCleaning
+    public interface IFCleaning
     {
         public Guid Id { get; set; }
         public string Description { get; set; }

@@ -7,7 +7,7 @@ using static Cleaning_Service.Enums;
 
 namespace Cleaning_Service
 {
-    internal class Domestic : IFProperty
+    public class Domestic : IFProperty
     {
         public Guid Id { get; set; }
         public string Address { get; set; }
@@ -23,11 +23,12 @@ namespace Cleaning_Service
             Type = type;
             Rooms = rooms;
             CurrentCustomer = customer;
+            Cleaning = new List<IFCleaning>();
         }
 
         public override string? ToString()
         {
-            return $"Address: {Address} Type: {Type} Number Of Bedrooms: {Rooms}";
+            return $"Address: {Address} Type: {Type} Number Of Rooms: {Rooms}";
         }
     }
 }
