@@ -20,5 +20,10 @@ namespace Cleaning_Service
             LoggedOn = DateTime.Now;
             MemberOfTeam = memberOfTeam;
         }
+
+        public override string? ToString()
+        {
+            return $"ID: {Id} Amount in minutes: {AmountInMins} Team Member: {MemberOfTeam} Logged On: {LoggedOn}";
+        }
     }
 }

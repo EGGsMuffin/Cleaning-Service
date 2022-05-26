@@ -25,5 +25,10 @@ namespace Cleaning_Service
             Open = true;
             PurchaseList = new List<Purchase>();
         }
+
+        public override string? ToString()
+        {
+            return $"Description: {Description} Priority: {Severity} Created On: {Date}";
+        }
     }
 }

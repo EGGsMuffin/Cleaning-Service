@@ -29,5 +29,10 @@ namespace Cleaning_Service
             Password = password;
             Type = StaffType.TEAM_MEMBER;
         }
+
+        public override string? ToString()
+        {
+            return $"Name: {Fname} {Sname} Type: {Type}";
+        }
     }
 }

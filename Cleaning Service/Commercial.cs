@@ -26,5 +26,10 @@ namespace Cleaning_Service
             SizeInSqFoot = sizeInSqFoot;
             CurrentCustomer = customer;
         }
+
+        public override string? ToString()
+        {
+            return $"Address: {Address} Name: {BusinessName} Type: {Type} Size: {SizeInSqFoot}";
+        }
     }
 }

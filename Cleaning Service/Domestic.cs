@@ -12,17 +12,22 @@ namespace Cleaning_Service
         public Guid Id { get; set; }
         public string Address { get; set; }
         public DomesticType Type { get; set; }
-        public int NumberOfBedrooms { get; set; }
+        public int Rooms { get; set; }
         public Customer CurrentCustomer { get; set; }
         public List<IFCleaning> Cleaning { get; set; }
 
-        public Domestic(string address, DomesticType type, int numberOfBedrooms, Customer customer)
+        public Domestic(string address, DomesticType type, int rooms, Customer customer)
         {
             Id = Guid.NewGuid();
             Address = address;
             Type = type;
-            NumberOfBedrooms = numberOfBedrooms;
+            Rooms = rooms;
             CurrentCustomer = customer;
+        }
+
+        public override string? ToString()
+        {
+            return $"Address: {Address} Type: {Type} Number Of Bedrooms: {Rooms}";
         }
     }
 }

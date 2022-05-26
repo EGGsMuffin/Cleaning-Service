@@ -22,5 +22,10 @@ namespace Cleaning_Service
             CreatedOn = DateTime.Now;
             CreatedBy = createdBy;
         }
+
+        public override string? ToString()
+        {
+            return $"ID: {Id} Desc: {Description} Cost: £{Cost} Created On: {CreatedOn}";
+        }
     }
 }
